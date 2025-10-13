@@ -7,7 +7,7 @@ import CoinContextProvider from './context/CoinContext.jsx'
 import Footer from './components/footer/Footer.jsx'
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <CoinContextProvider>
       <div className='app'>
         <NavBar />
