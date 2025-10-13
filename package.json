@@ -1,12 +1,12 @@
 {
-  "homepage": "https://harish10github.github.io/cryptoplace/",
+  "homepage": "https://harish10github.github.io/cryptoplace",
   "name": "cryptoplace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "react-scripts build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy":"npm run build",
