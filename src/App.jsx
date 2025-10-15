@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from './components/Navbar/NavBar'
-import { HashRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
 import CoinContextProvider from './context/CoinContext.jsx'
 import Footer from './components/footer/Footer.jsx'
 const App = () => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
     <CoinContextProvider>
       <div className='app'>
         <NavBar />
@@ -18,7 +18,7 @@ const App = () => {
           <Footer />
       </div>
       </CoinContextProvider> 
-    </HashRouter>
+    </BrowserRouter>
     
   )
 }
